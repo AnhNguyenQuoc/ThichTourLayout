@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phy Trang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid top-header fixed-top hidden-xs-down hidden-md-down">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul>
+                        <li class="small-border left-header ">
+                            <a href="#">
+                                <i class="fa fa-envelope-o" aria-hidden="true">phy@gmail.com</i>
+                            </a>
+                        </li>
+                        <li class="left-header">
+                            <a href="#">
+                            <i class="fa fa-phone-square" aria-hidden="true">090xxxxxx</i>
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <ul>
+                        <li class="right-header"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="right-header"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="right-header"><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container menu">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="menu-mobile" style="background-color: #669999;">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Phy</a>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <nav>
+                                <a class="nav-link cl-effect-21" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
+                            </nav>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div style="height: 200px;"></div>
+    <div class="tour-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <img src="img/4.jpg" alt="tour-img" class="tour-img img-fluid">
+                </div>
+            </div>
+            <div class="row bottom-border">
+                <div class="col-md-4 col-xs-4">
+                    <i class="fa fa-calendar" aria-hidden="true" style="font-size: 2em; padding-top: 12px;">Tour</i>
+                </div>
+                <div class="col-md-8 col-xs-8 ">
+                    <nav class="navbar navbar-light ">
+                        <form class="form-inline text-right ml-auto">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+            <div class="row bottom-border">
+                <div class="col-md-2 col-xs-12">
+                    <div class="tour-time text-center">
+                        <div class="time-day">23-25</div>
+                        <div class="time-month">Sep</div>
+                        <div class="time-year">2017</div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <a href="tour-description.html"><div class="tour-name text-center">Ta Nang - Phan Dung</div></a>
+                </div>
+                <div class="col-md-5 col-xs-12 text-center">
+                    <div class="tour-order">
+                    <a href="order-tour.html"><button class="btn btn-success">Order</button></a>
+                    </div>
+                </div>
+            </div>
+               <div class="row bottom-border">
+                <div class="col-md-2 col-xs-12">
+                    <div class="tour-time text-center">
+                        <div class="time-day">1-2</div>
+                        <div class="time-month">Feb</div>
+                        <div class="time-year">2017</div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <a href="#"><div class="tour-name text-center">Ho Ta Ba</div></a>
+                </div>
+                <div class="col-md-5 col-xs-12 text-center">
+                    <div class="tour-order">
+                    <a href="#"><button class="btn btn-success">Order</button></a>
+                    </div>
+                </div>
+            </div>
+               <div class="row bottom-border">
+                <div class="col-md-2 col-xs-12">
+                    <div class="tour-time text-center">
+                        <div class="time-day">12-14</div>
+                        <div class="time-month">Sep</div>
+                        <div class="time-year">2017</div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <a href="#"><div class="tour-name text-center">Da Nang - Hoi An</div></a>
+                </div>
+                <div class="col-md-5 col-xs-12 text-center">
+                    <div class="tour-order">
+                    <a href="#"><button class="btn btn-success">Order</button></a>
+                    </div>
+                </div>
+            </div>
+                  <div class="row bottom-border">
+                <div class="col-md-2 col-xs-12">
+                    <div class="tour-time text-center">
+                        <div class="time-day">12-14</div>
+                        <div class="time-month">Sep</div>
+                        <div class="time-year">2017</div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <a href="#"><div class="tour-name text-center">Da Nang - Hoi An</div></a>
+                </div>
+                <div class="col-md-5 col-xs-12 text-center">
+                    <div class="tour-order">
+                    <a href="#"><button class="btn btn-success">Order</button></a>
+                    </div>
+                </div>
+            </div>
+                  <div class="row bottom-border">
+                <div class="col-md-2 col-xs-12">
+                    <div class="tour-time text-center">
+                        <div class="time-day">12-14</div>
+                        <div class="time-month">Sep</div>
+                        <div class="time-year">2017</div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <a href="#"><div class="tour-name text-center">Da Nang - Hoi An</div></a>
+                </div>
+                <div class="col-md-5 col-xs-12 text-center">
+                    <div class="tour-order">
+                    <a href="#"><button class="btn btn-success">Order</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 30px;"></div>
+     <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 left-footer">
+                    <h6>SIGN UP FOR THE NEWS</h6>
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" style="background-color: transparent;">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 col-xs-12 midle-footer">
+                    <h6>CONTACT US</h6>
+                    <div>
+                        <p>PHYINFO@GMAIL</p>
+                        <p>+07103123123</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 right-footer">
+                    <h6>FOLLOW US</h6>
+                    <div>
+                        <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fa fa-flickr" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

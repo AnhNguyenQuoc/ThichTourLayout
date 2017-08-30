@@ -6,9 +6,7 @@
     <title>Phy Trang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -45,6 +43,7 @@
                 </div>
             </div>
         </div>
+        <!-- Menu -->
         <div class="container menu">
             <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="menu-mobile">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,14 +51,14 @@
                 </button>
                 <a class="navbar-brand" href="#">Phy</a>
                 <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="nav navbar-nav ml-auto " >
+                    <ul class="nav navbar-nav ml-auto ">
                         <li class="nav-item active">
                             <nav>
-                                <a class="nav-link cl-effect-21" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link cl-effect-21" href="index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
                             </nav>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Tour</a>
+                            <a class="nav-link cl-effect-21" href="listtour.html" style="color: white;">Tour</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link cl-effect-21" href="#" style="color: white;">Blog</a>
@@ -72,6 +71,7 @@
             </nav>
         </div>
     </header>
+    <!-- Silder -->
     <div class="main-slide">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
             <ol class="carousel-indicators hidden-md-down">
@@ -116,6 +116,7 @@
         </div>
     </div>
     <div class="main-wrapper">
+        <!-- Tour -->
         <section class="tour-wrapper">
             <div class="container">
                 <div class="row">
@@ -185,7 +186,8 @@
                 </div>
             </div>
         </section>
-        <section class="blog-wrapper">
+        <!-- Blog -->
+        <!--<section class="blog-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
@@ -231,7 +233,74 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
+        <!-- Review -->
+        <section class="review-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 title-review">
+                        <h1 class="illusion">&nbsp;Review&nbsp;</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 review-list">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <blockquote class="blockquote" style="padding-right: 3em;">
+                            <p class="mb-0">Các bạn hỗ trợ rất nhiệt tình, chương trình đi rất ý nghĩa</p>
+                            <footer class="blockquote-footer">
+                                Pham My
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6 col-xs-12 review-list">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <blockquote class="blockquote" style="padding-right: 3em;">
+                            <p class="mb-0">"Đi không phải chỉ để nhìn. Đi là để cảm nhận."</p>
+                            <footer class="blockquote-footer">
+                                Thuong
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 review-list">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <blockquote class="blockquote" style="padding-right: 3em;">
+                            <p class="mb-0">nhiệt tình, thân thiện</p>
+                            <footer class="blockquote-footer">
+                                Le Tuan
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6 col-xs-12 review-list">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <blockquote class="blockquote" style="padding-right: 3em;">
+                            <p class="mb-0">Thích đi với THÍCH lắm '<3'</p>
+                            <footer class="blockquote-footer">
+                                Tieu Duyen
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
     </div>
     <div style="height: 100px;"></div>
     <footer class="main-footer">

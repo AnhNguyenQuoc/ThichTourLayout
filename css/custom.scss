@@ -76,6 +76,9 @@ html {
 
 
 
+
+
+
 /* Common style */
 
 .grid figure {
@@ -149,6 +152,9 @@ html {
 
 
 
+
+
+
 /* Anchor will cover the whole item by default */
 
 
@@ -180,6 +186,9 @@ html {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
+
+
+
 
 
 
@@ -329,24 +338,21 @@ html {
 
 
 
+
+
+
 /* Silde */
 
 .main-slide {
-    width: 100%;
-    height: 100%;
     top: 5px;
-    @media screen and (max-width: $small-screen) {
-        height: 80%;
-    }
     div {
         .carousel-inner {
             .carousel-item {
+                @media screen and (max-width: $small-screen){
+                    height: 300px;
+                }
                 img {
-                    width: 100vw;
-                    height: 100vh;
-                    @media screen and (max-width: $small-screen) {
-                        height: 80vh;
-                    }
+
                 }
             }
         }
@@ -399,6 +405,9 @@ html {
         }
     }
 }
+
+
+
 
 
 
@@ -500,6 +509,9 @@ html {
 
 
 
+
+
+
 /* Background Between Tour and Blog */
 
 .bg-wrapper-img {
@@ -531,6 +543,9 @@ html {
         }
     }
 }
+
+
+
 
 
 
@@ -662,7 +677,109 @@ html {
 
 
 
+/* Review */
 
+.title-review {
+    h1 {
+        @include title_section;
+        margin-bottom: 90px;
+        @media screen and (max-width: $small-screen){
+            font-size: 40px;
+        }
+    }
+}
+
+
+
+.review-list {
+        i {
+            font-size: 110%;
+
+        }
+}
+
+
+/* Contact Page */
+
+.list-contact {
+    ul {
+        list-style: none;
+        text-align: left;
+        li {
+            i {
+                font-size: 3em;
+                span {
+                    font-size: 0.4em;
+                    color: #c2c6ce;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Map */
+
+#gmap_canvas img {
+    max-width: none!important;
+    background: none!important
+}
+
+
+
+
+
+/* Tour List */
+
+.tour-img {
+    width: 100%;
+    height: 200px;
+}
+
+.tour-time {
+    font-weight: bold;
+}
+
+.tour-name {
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.tour-order {
+    padding-top: 20px;
+    @media screen and (max-width: $small-screen) {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* Order Tour */
+
+.title-order-tour {
+    h1 {
+        @media screen and (max-width: $small-screen) {
+            top: -40px;
+            font-size: 200%;
+        }
+    }
+}
+
+
+
+/* Contact Information */
+
+.title-contact-information {
+    @media screen and (max-width: $small-screen) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: $md-screen) {
+        top: -120px;
+    }
+}
 
 
 
@@ -681,10 +798,10 @@ html {
                     color: white;
                     letter-spacing: 2px;
                 }
-                form{
-                    div{
-                        div{
-                            input{
+                form {
+                    div {
+                        div {
+                            input {
                                 border: 1px solid white;
                                 border-radius: 0px;
                             }
@@ -692,31 +809,30 @@ html {
                     }
                 }
             }
-            .midle-footer{
+            .midle-footer {
                 text-align: center;
                 top: 35px;
-                h6{
+                h6 {
                     color: white;
                     letter-spacing: 3px;
                 }
-                div{
+                div {
                     padding-top: 3px;
-                    p{
+                    p {
                         letter-spacing: 1px;
                         font-size: 90%;
                     }
                 }
-
             }
-            .right-footer{
+            .right-footer {
                 top: 35px;
                 text-align: center;
-                h6{
+                h6 {
                     color: white;
                     letter-spacing: 3px;
                 }
-                div{
-                    a{
+                div {
+                    a {
                         margin-left: 7px;
                     }
                 }
@@ -724,6 +840,7 @@ html {
         }
     }
 }
+
 
 
 
@@ -901,4 +1018,8 @@ figure.effect-lily:hover p {
     transition-delay: 0.05s;
     -webkit-transition-duration: 0.35s;
     transition-duration: 0.35s;
+}
+
+.bottom-border {
+    border-bottom: 1px solid black;
 }

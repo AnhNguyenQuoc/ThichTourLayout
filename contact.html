@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phy Trang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid top-header fixed-top hidden-xs-down hidden-md-down">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul>
+                        <li class="small-border left-header ">
+                            <a href="#">
+                                <i class="fa fa-envelope-o" aria-hidden="true">phy@gmail.com</i>
+                            </a>
+                        </li>
+                        <li class="left-header">
+                            <a href="#">
+                            <i class="fa fa-phone-square" aria-hidden="true">090xxxxxx</i>
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <ul>
+                        <li class="right-header"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="right-header"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="right-header"><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container menu">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="menu-mobile" style="background-color: #669999;">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Phy</a>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <nav>
+                                <a class="nav-link cl-effect-21" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
+                            </nav>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cl-effect-21" href="#" style="color: white;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div style="height: 200px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h1 class="text-center font-weight-bold text-uppercase" style="font-family: 'Anton', sans-serif; font-size: 3em;">Contact ThichPhy</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="list-contact">
+                    <ul>
+                        <li>
+                            <i class="fa fa-address-card" aria-hidden="true"><span style="padding-left: 15px;">112/2 Tran Quoc Phu distrist. Ho Chi Minh City</span></i>
+                            <h6>Address</h6>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"><span style="padding-left: 24px;">phi@gmail.com</span>
+                            </i>
+                            <h6 style="padding-left: 5px;">Email</h6>
+                        </li>
+                        <li>
+                            <i class="fa fa-mobile" aria-hidden="true"><span style="padding-left: 49px;">+0710312313</span>
+                            </i>
+                            <h6>Mobile</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div id="map">
+                    <div style='overflow:hidden;height:228px;width:570px;'>
+                        <div id='gmap_canvas' style='height:228px;width:570px;'></div>
+                        <div><small><a href="http://embedgooglemaps.com">Click here to generate your map!</a></small></div>
+                        <div><small><a href="https://ilovebargain.ph/takatack.com-vouchers/">takatack voucher</a></small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div style="height: 100px;"></div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 left-footer">
+                    <h6>SIGN UP FOR THE NEWS</h6>
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" style="background-color: transparent;">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 col-xs-12 midle-footer">
+                    <h6>CONTACT US</h6>
+                    <div>
+                        <p>PHYINFO@GMAIL</p>
+                        <p>+07103123123</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 right-footer">
+                    <h6>FOLLOW US</h6>
+                    <div>
+                        <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fa fa-flickr" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="js/map.js"></script>
+</body>
+
+</html>
